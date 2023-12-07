@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Authentication/Authentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Cryptography/CryptographyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ConnectDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/LoadJSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/SearchFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/pass.json" afterDir="false" />
+    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="skeleton initialization">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ConnectDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ConnectDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/SearchFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/SearchFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/pass.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,12 +83,25 @@
       <workItem from="1701936454083" duration="4821000" />
       <workItem from="1701949365111" duration="2389000" />
       <workItem from="1701951796425" duration="5869000" />
-      <workItem from="1701968963003" duration="480000" />
+      <workItem from="1701968963003" duration="3170000" />
     </task>
+    <task id="LOCAL-00001" summary="skeleton initialization">
+      <option name="closed" value="true" />
+      <created>1701969624133</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701969624134</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="skeleton initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="skeleton initialization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
