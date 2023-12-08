@@ -6,19 +6,13 @@ import java.sql.*;
 public class ConnectDatabase {
     // JDBC URL, username, and password of PostgreSQL server
     private static final String JDBC_URL = "jdbc:postgresql://localhost:5432/postgres";
-    private static final String USERNAME = "postgres";
-    private static final String PASSWORD = "dotanphat";
+    private static final String USERNAME = System.getenv("postgres_user");
+
+    private static final String PASSWORD = System.getenv("postgres_pwd");
 
     private static int user_id;
-    public static void main(String[] args) {
-        try {
-            System.out.println(findApplication("Udemy"));
-        }
-        catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-    public static boolean checkAuthenticate(String username, String password) throws SQLException{
+
+    public static boolean checkAuthenticate(String username, String password) throws SQLException {
         try(Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);) {
             // Establish a connection
             // SQL query

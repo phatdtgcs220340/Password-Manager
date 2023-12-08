@@ -1,11 +1,14 @@
 package com.phatdo;
 
 import com.phatdo.Authentication.Authentication;
+import com.phatdo.DataProcess.ConnectDatabase;
 import com.phatdo.Login.LoginFrame;
 import com.phatdo.PasswordManager.PasswordManagerFrame;
 import com.phatdo.PasswordManager.SearchFrame;
 
 import javax.swing.*;
+import java.util.Scanner;
+
 public class Main{
 
     public static void main(String[] args) {
@@ -18,8 +21,7 @@ public class Main{
         while (!Authentication.getAuthenticate()) {
             loginFrame.setVisible(true);
         }
-
-        loginFrame = null;
+        loginFrame.setVisible(false);
         JFrame pasManFrame = new SearchFrame();
         pasManFrame.setVisible(true);
     }

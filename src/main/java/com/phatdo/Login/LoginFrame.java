@@ -2,6 +2,7 @@ package com.phatdo.Login;
 
 import com.phatdo.Authentication.Authentication;
 import com.phatdo.DataProcess.ConnectDatabase;
+import org.postgresql.util.PSQLException;
 
 import javax.swing.*;
 import java.awt.*;
@@ -76,7 +77,7 @@ public class LoginFrame extends JFrame {
             }
         }
         catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Couldn't connect to database :((");
         }
     }
 
