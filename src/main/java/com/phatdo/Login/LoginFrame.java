@@ -2,6 +2,7 @@ package com.phatdo.Login;
 
 import com.phatdo.Authentication.Authentication;
 import com.phatdo.DataProcess.ConnectDatabase;
+import com.phatdo.PasswordManager.ErrorMessage;
 import org.postgresql.util.PSQLException;
 
 import javax.swing.*;
@@ -73,11 +74,14 @@ public class LoginFrame extends JFrame {
         try {
             if (ConnectDatabase.checkAuthenticate(username, password)) {
                 Authentication.setAuthenticate(true);
-                setVisible(false);
+                System.out.println("ok");
+            }
+            else {
+                ErrorMessage.showErrorDialog("Couldn't find user or wrong password", "User error");
             }
         }
         catch (SQLException e) {
-            System.out.println("Couldn't connect to database :((");
+            ErrorMessage.showErrorDialog("Coudln't connect to database :((", "Connection error");
         }
     }
 
