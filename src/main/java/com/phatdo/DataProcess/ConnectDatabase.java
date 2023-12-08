@@ -2,8 +2,6 @@ package com.phatdo.DataProcess;
 import com.phatdo.Cryptography.CryptographyTest;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Objects;
 
 public class ConnectDatabase {
     // JDBC URL, username, and password of PostgreSQL server
@@ -54,8 +52,8 @@ public class ConnectDatabase {
             // Establish a connection
 
             // Your SQL query
-            String sqlQuery = "SELECT * FROM applications " +
-                    "WHERE application='"+expected_application+"' AND owner_id=" +user_id + " ;";
+            String sqlQuery = String.format("SELECT * FROM applications " +
+                    "WHERE application= '%s' AND owner_id= %d ;", expected_application, user_id);
 
             // Create a PreparedStatement
             try (PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)) {

@@ -22,6 +22,5 @@ public class Main{
         loginFrame = null;
         JFrame pasManFrame = new SearchFrame();
         pasManFrame.setVisible(true);
-
     }
 }

@@ -1,19 +1,14 @@
 package com.phatdo.Cryptography;
 
 import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
-import java.security.Key;
 import java.util.Base64;
 
 public class CryptographyTest {
 
     private static final SecretKey secretKey = convertStringToSecretKey(System.getenv("password_KEY"));
 
-    public static void main(String[] args) throws Exception {
-        System.out.println(encrypt("phatdo"));
-    }
     private static SecretKey convertStringToSecretKey(String keyAsString) {
         byte[] decodedKey = Base64.getDecoder().decode(keyAsString);
         return new SecretKeySpec(decodedKey, 0, decodedKey.length, "AES");
