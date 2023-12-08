@@ -2,7 +2,7 @@ package com.phatdo;
 
 import com.phatdo.Authentication.Authentication;
 import com.phatdo.Login.LoginFrame;
-import com.phatdo.PasswordManager.SearchFrame;
+import com.phatdo.PasswordManager.PasswordManagerFrame;
 
 import javax.swing.*;
 
@@ -15,11 +15,21 @@ public class Main{
     public void go() {
 
         JFrame loginFrame = new LoginFrame();
-        while (!Authentication.getAuthenticate()) {
-            loginFrame.setVisible(true);
+        loginFrame.setVisible(true);
+        boolean isAuthenticated;
+        while(true) {
+            isAuthenticated = Authentication.getAuthenticate();
+            try {
+                // Sleep for 3 seconds (3000 milliseconds)
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            if (isAuthenticated)
+                break;
         }
         loginFrame.setVisible(false);
-        JFrame pasManFrame = new SearchFrame();
+        JFrame pasManFrame = new PasswordManagerFrame();
         pasManFrame.setVisible(true);
     }
 }
