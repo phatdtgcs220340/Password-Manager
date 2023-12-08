@@ -1,13 +1,10 @@
 package com.phatdo;
 
 import com.phatdo.Authentication.Authentication;
-import com.phatdo.DataProcess.ConnectDatabase;
 import com.phatdo.Login.LoginFrame;
-import com.phatdo.PasswordManager.PasswordManagerFrame;
 import com.phatdo.PasswordManager.SearchFrame;
 
 import javax.swing.*;
-import java.util.Scanner;
 
 public class Main{
 
