@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="add toCapitalize() method">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="Delete LoadJSON">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/DialogMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/StringFormatter/StringFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/StringFormatter/StringFormat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +78,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.phatdo.Main" />
+      <module name="Password-Manager.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.phatdo.StringFormatter.*" />
@@ -122,7 +118,8 @@
       <workItem from="1702062837233" duration="3776000" />
       <workItem from="1702094833645" duration="843000" />
       <workItem from="1702095845470" duration="89000" />
-      <workItem from="1702104470397" duration="4885000" />
+      <workItem from="1702104470397" duration="5113000" />
+      <workItem from="1702111360822" duration="1781000" />
     </task>
     <task id="LOCAL-00001" summary="skeleton initialization">
       <option name="closed" value="true" />
@@ -260,7 +257,71 @@
       <option name="project" value="LOCAL" />
       <updated>1702106934823</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="modify it for general using of dialog message">
+      <option name="closed" value="true" />
+      <created>1702110035180</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110035180</updated>
+    </task>
+    <task id="LOCAL-00019" summary="modify it for general using of dialog message">
+      <option name="closed" value="true" />
+      <created>1702110055094</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110055094</updated>
+    </task>
+    <task id="LOCAL-00020" summary="modify it for general using of dialog message">
+      <option name="closed" value="true" />
+      <created>1702110059769</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110059770</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix empty text bug">
+      <option name="closed" value="true" />
+      <created>1702110081338</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110081338</updated>
+    </task>
+    <task id="LOCAL-00022" summary="project updating">
+      <option name="closed" value="true" />
+      <created>1702110109522</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110109522</updated>
+    </task>
+    <task id="LOCAL-00023" summary="refactor AutoCopy">
+      <option name="closed" value="true" />
+      <created>1702111548533</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702111548533</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor AutoCopy">
+      <option name="closed" value="true" />
+      <created>1702111555923</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1702111555923</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Delete LoadJSON">
+      <option name="closed" value="true" />
+      <created>1702111569588</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1702111569588</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +341,11 @@
     <MESSAGE value="delete unused stuffs" />
     <MESSAGE value="changing comments" />
     <MESSAGE value="add toCapitalize() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add toCapitalize() method" />
+    <MESSAGE value="modify it for general using of dialog message" />
+    <MESSAGE value="fix empty text bug" />
+    <MESSAGE value="project updating" />
+    <MESSAGE value="refactor AutoCopy" />
+    <MESSAGE value="Delete LoadJSON" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete LoadJSON" />
   </component>
 </project>
