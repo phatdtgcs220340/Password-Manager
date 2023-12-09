@@ -1,5 +1,5 @@
 package com.phatdo.DataProcess;
-import com.phatdo.Clipboard.AutoCopy;
+import com.phatdo.ClipboardProcess.AutoCopy;
 import com.phatdo.Cryptography.CryptographyTest;
 
 import java.sql.*;
