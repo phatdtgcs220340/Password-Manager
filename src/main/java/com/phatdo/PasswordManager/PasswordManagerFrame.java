@@ -114,11 +114,11 @@ public class PasswordManagerFrame extends JFrame {
             String applicationInput = StringFormat.toCapitalize(searchApplicationTextField.getText());
             String result = ConnectDatabase.findApplication(applicationInput);
             if (Objects.equals(result, "")) {
-                ErrorMessage.showErrorDialog("Application doesn't exist","Invalid input");
+                DialogMessage.showErrorDialog("Application doesn't exist","Invalid input");
             }
             searchInformationTextField.setText(result);
         } catch (SQLException e) {
-            ErrorMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
+            DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
         }
     }
 
@@ -131,16 +131,21 @@ public class PasswordManagerFrame extends JFrame {
             application = StringFormat.toCapitalize(application);
             String username = addUsernameTextField.getText();
             String password = addPasswordTextField.getText();
+            if (username.isEmpty() || password.isEmpty() || application.isEmpty()) {
+                DialogMessage.showErrorDialog("The information must be filled", "Invalid input");
+                return;
+            }
             ConnectDatabase.addApplication(application, username, password);
+            DialogMessage.showNotificationDialog(String.format("%s is successfully added", application), "Application added");
         }
         catch (PSQLException e) {
-            ErrorMessage.showErrorDialog("Unique constraint violated", "Constraint error");
+            DialogMessage.showErrorDialog("Application has already existed", "Unique constraint violated");
         }
         catch (SQLException e) {
-            ErrorMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
+            DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
         }
         catch (Exception e) {
-            ErrorMessage.showErrorDialog("Couldn't get Key", "Key Error");
+            DialogMessage.showErrorDialog("Couldn't get Key", "Key Error");
         }
     }
     public static void main(String[] args) {
