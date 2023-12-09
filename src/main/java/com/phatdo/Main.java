@@ -20,7 +20,7 @@ public class Main{
         while(true) {
             isAuthenticated = Authentication.getAuthenticate();
             try {
-                // Sleep for 3 seconds (3000 milliseconds)
+                // Sleep for 0.2 seconds (200 milliseconds)
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 e.printStackTrace();
