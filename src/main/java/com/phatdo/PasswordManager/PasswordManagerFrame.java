@@ -2,11 +2,11 @@ package com.phatdo.PasswordManager;
 
 import com.phatdo.DataProcess.ConnectDatabase;
 import com.phatdo.Cryptography.PasswordGenerator;
+import com.phatdo.StringFormatter.StringFormat;
+import org.postgresql.util.PSQLException;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.Objects;
 
@@ -46,19 +46,9 @@ public class PasswordManagerFrame extends JFrame {
         addPanel.add(generatePasswordButton);
         addPanel.add(addButton);
 
-        generatePasswordButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                performGeneratePassword();
-            }
-        });
+        generatePasswordButton.addActionListener(e -> performGeneratePassword());
 
-        addButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                performAdd();
-            }
-        });
+        addButton.addActionListener(e -> performAdd());
         // Search Tab
         JPanel searchPanel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
@@ -99,12 +89,7 @@ public class PasswordManagerFrame extends JFrame {
         gbc.gridwidth = 2;
         searchPanel.add(searchButton, gbc);
 
-        searchButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                performSearch();
-            }
-        });
+        searchButton.addActionListener(e -> performSearch());
         // Add tabs to the tabbedPane
         tabbedPane.addTab("Add Application", addPanel);
         tabbedPane.addTab("Search Application", searchPanel);
@@ -126,13 +111,14 @@ public class PasswordManagerFrame extends JFrame {
 
     public void performSearch() {
         try {
-            String result = ConnectDatabase.findApplication(searchApplicationTextField.getText());
+            String applicationInput = StringFormat.toCapitalize(searchApplicationTextField.getText());
+            String result = ConnectDatabase.findApplication(applicationInput);
             if (Objects.equals(result, "")) {
                 ErrorMessage.showErrorDialog("Application doesn't exist","Invalid input");
             }
             searchInformationTextField.setText(result);
         } catch (SQLException e) {
-            ErrorMessage.showErrorDialog("Coudln't connect to database :((", "Connection error");
+            ErrorMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
         }
     }
 
@@ -142,15 +128,16 @@ public class PasswordManagerFrame extends JFrame {
     public void performAdd() {
         try {
             String application = addApplicationTextField.getText();
+            application = StringFormat.toCapitalize(application);
             String username = addUsernameTextField.getText();
             String password = addPasswordTextField.getText();
             ConnectDatabase.addApplication(application, username, password);
         }
-//        catch ( e) {
-//            System.out.println("Unique constraint violated");
-//        }
+        catch (PSQLException e) {
+            ErrorMessage.showErrorDialog("Unique constraint violated", "Constraint error");
+        }
         catch (SQLException e) {
-            ErrorMessage.showErrorDialog("Coudln't connect to database :((", "Connection error");
+            ErrorMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
         }
         catch (Exception e) {
             ErrorMessage.showErrorDialog("Couldn't get Key", "Key Error");
