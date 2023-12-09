@@ -1,4 +1,5 @@
 package com.phatdo.DataProcess;
+import com.phatdo.Clipboard.AutoCopy;
 import com.phatdo.Cryptography.CryptographyTest;
 
 import java.sql.*;
@@ -49,6 +50,8 @@ public class ConnectDatabase {
                 String username = resultSet.getString("username");
                 String password = resultSet.getString("password");
                 password = CryptographyTest.decrypt(password);
+                AutoCopy.copyToClipboard(password);
+
                 result = String.format("%s\nUsername: %s\nPassword: %s", application, username, password);
             }
         } catch (Exception e) {
