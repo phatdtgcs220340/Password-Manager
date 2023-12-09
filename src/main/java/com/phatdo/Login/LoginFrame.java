@@ -2,7 +2,7 @@ package com.phatdo.Login;
 
 import com.phatdo.Authentication.Authentication;
 import com.phatdo.DataProcess.ConnectDatabase;
-import com.phatdo.PasswordManager.ErrorMessage;
+import com.phatdo.PasswordManager.DialogMessage;
 
 import javax.swing.*;
 import java.awt.*;
@@ -69,11 +69,11 @@ public class LoginFrame extends JFrame {
                 System.out.println("Authenticated");
             }
             else {
-                ErrorMessage.showErrorDialog("Couldn't find user or wrong password", "User error");
+                DialogMessage.showErrorDialog("Couldn't find user or wrong password", "User error");
             }
         }
         catch (SQLException e) {
-            ErrorMessage.showErrorDialog("Coudln't connect to database :((", "Connection error");
+            DialogMessage.showErrorDialog("Coudln't connect to database :((", "Connection error");
         }
     }
 
