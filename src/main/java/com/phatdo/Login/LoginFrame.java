@@ -3,12 +3,9 @@ package com.phatdo.Login;
 import com.phatdo.Authentication.Authentication;
 import com.phatdo.DataProcess.ConnectDatabase;
 import com.phatdo.PasswordManager.ErrorMessage;
-import org.postgresql.util.PSQLException;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.sql.SQLException;
@@ -52,12 +49,7 @@ public class LoginFrame extends JFrame {
 
 
         // Add action listener for the login button
-        loginButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                performLogin();
-            }
-        });
+        loginButton.addActionListener(e -> performLogin());
         passwordField.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -74,7 +66,7 @@ public class LoginFrame extends JFrame {
         try {
             if (ConnectDatabase.checkAuthenticate(username, password)) {
                 Authentication.setAuthenticate(true);
-                System.out.println("ok");
+                System.out.println("Authenticated");
             }
             else {
                 ErrorMessage.showErrorDialog("Couldn't find user or wrong password", "User error");
