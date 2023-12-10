@@ -20,7 +20,6 @@ public class PasswordManagerFrame extends JFrame {
     private JTextArea searchInformationTextField;
     private JButton searchButton;
 
-
     private JTextField updateApplicationTextField;
     private JTextField updatePasswordTextField;
     private JButton updateButton;
@@ -32,7 +31,6 @@ public class PasswordManagerFrame extends JFrame {
         setLocationRelativeTo(null);
 
         JTabbedPane tabbedPane = new JTabbedPane();
-
 
         // Search Tab
         JPanel searchPanel = new JPanel(new GridBagLayout());
@@ -191,19 +189,12 @@ public class PasswordManagerFrame extends JFrame {
         setVisible(true);
     }
 
-    private JPanel createPanel(JLabel label, JComponent component) {
-        JPanel panel = new JPanel(new BorderLayout());
-        panel.add(label, BorderLayout.WEST);
-        panel.add(component, BorderLayout.CENTER);
-        return panel;
-    }
-
     public void performSearch() {
         try {
             String applicationInput = StringFormat.toCapitalize(searchApplicationTextField.getText());
             String result = ConnectDatabase.findApplication(applicationInput);
             if (Objects.equals(result, "")) {
-                DialogMessage.showErrorDialog("Application doesn't exist","Invalid input");
+                DialogMessage.showErrorDialog("Application doesn't exist", "Invalid input");
                 return;
             }
             searchInformationTextField.setText(result);
@@ -223,18 +214,17 @@ public class PasswordManagerFrame extends JFrame {
                 return;
             }
             ConnectDatabase.addApplication(application, username, password);
-            DialogMessage.showNotificationDialog(String.format("%s has been successfully added", application), "Application added");
-        }
-        catch (PSQLException e) {
+            DialogMessage.showNotificationDialog(String.format("%s has been successfully added", application),
+                    "Application added");
+        } catch (PSQLException e) {
             DialogMessage.showErrorDialog("Application has already existed", "Unique constraint violated");
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             DialogMessage.showErrorDialog("Couldn't get Key", "Key Error");
         }
     }
+
     public void performUpdate() {
         try {
             String application = updateApplicationTextField.getText();
@@ -242,7 +232,7 @@ public class PasswordManagerFrame extends JFrame {
             String password = updatePasswordTextField.getText();
             String result = ConnectDatabase.findApplication(application);
             if (Objects.equals(result, "")) {
-                DialogMessage.showErrorDialog("Application doesn't exist","Invalid input");
+                DialogMessage.showErrorDialog("Application doesn't exist", "Invalid input");
                 return;
             }
             if (password.isEmpty() || application.isEmpty()) {
@@ -253,19 +243,18 @@ public class PasswordManagerFrame extends JFrame {
                     "Are you sure about that");
             if (decision == 0) {
                 ConnectDatabase.updateApplication(application, password);
-                DialogMessage.showNotificationDialog(String.format("%s's password has been successfully changed", application),
+                DialogMessage.showNotificationDialog(
+                        String.format("%s's password has been successfully changed", application),
                         "Password added");
-            }
-            else
+            } else
                 return;
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             DialogMessage.showErrorDialog("Couldn't get Key", "Key Error");
         }
     }
+
     public void performGeneratePassword(JTextField textField) {
         textField.setText(PasswordGenerator.generatePassword(16));
     }
