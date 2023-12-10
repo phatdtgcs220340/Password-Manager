@@ -5,7 +5,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 
-public class CryptographyTest {
+public class Cryptography {
 
     private static final SecretKey secretKey = convertStringToSecretKey(System.getenv("password_KEY"));
     private static SecretKey convertStringToSecretKey(String keyAsString) {
