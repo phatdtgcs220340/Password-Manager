@@ -218,15 +218,11 @@ public class PasswordManagerFrame extends JFrame {
             int decision = DialogMessage.showDecisionDialog("Are you sure with the change",
                     "Are you sure about that");
             if (decision == 0) {
-                ApplicationProcess.updateApplication(application, password);
-                DialogMessage.showNotificationDialog(
-                        String.format("%s's password has been successfully changed", application),
-                        "Password added");
+                ApplicationProcess.addApplication(application, username, password);
+                DialogMessage.showNotificationDialog(String.format("%s has been successfully added", application),
+                        "Application added");
             } else
                 return;
-            ApplicationProcess.addApplication(application, username, password);
-            DialogMessage.showNotificationDialog(String.format("%s has been successfully added", application),
-                    "Application added");
         } catch (PSQLException e) {
             DialogMessage.showErrorDialog("Application has already existed", "Unique constraint violated");
         } catch (SQLException e) {
