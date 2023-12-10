@@ -50,8 +50,8 @@ public class ApplicationProcess {
     public static void updateApplication(String application, String password) throws Exception {
         String sqlQuery = String.format("UPDATE applications " +
                 "SET password = '%s', date_modified = '%s' " +
-                "WHERE application = '%s';", Cryptography.encrypt(password), Timestamp.from(Instant.now()),
-                application);
+                "WHERE application = '%s' AND owner_id = '%d';", Cryptography.encrypt(password), Timestamp.from(Instant.now()),
+                application, OwnerProcess.getUser_id());
         try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
                 PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)) {
             preparedStatement.executeUpdate();
