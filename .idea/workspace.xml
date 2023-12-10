@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="change gui layout">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2023_13_50_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2023_13_50__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" afterDir="false" />
+    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="fix bug update all owners">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Cryptography/CryptographyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Cryptography/Cryptography.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ConnectDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/StringFormatter/StringFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/StringFormatter/StringFormat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +58,7 @@
     "Gradle.Password-Manager [:ConnectDatabase.main()].executor": "Run",
     "Gradle.Password-Manager [:DialogMessage.main()].executor": "Run",
     "Gradle.Password-Manager [:Main.main()].executor": "Run",
+    "Gradle.Password-Manager [:PasswordManagerFrame.main()].executor": "Run",
     "Gradle.Password-Manager [:StringFormat.main()].executor": "Run",
     "RunOnceActivity.OpenDatabaseViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -159,7 +148,8 @@
       <workItem from="1702135978495" duration="2758000" />
       <workItem from="1702141511721" duration="93000" />
       <workItem from="1702186789271" duration="4907000" />
-      <workItem from="1702195138208" duration="1773000" />
+      <workItem from="1702195138208" duration="2061000" />
+      <workItem from="1702219823153" duration="2435000" />
     </task>
     <task id="LOCAL-00001" summary="skeleton initialization">
       <option name="closed" value="true" />
@@ -425,20 +415,77 @@
       <option name="project" value="LOCAL" />
       <updated>1702191113327</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Rename file and encode password">
+      <option name="closed" value="true" />
+      <created>1702197041382</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197041383</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Rename file">
+      <option name="closed" value="true" />
+      <created>1702197048459</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197048459</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Trim text">
+      <option name="closed" value="true" />
+      <created>1702197067532</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197067532</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Trim text and add encode text">
+      <option name="closed" value="true" />
+      <created>1702197084215</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197084215</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add new method trim text and add encode text">
+      <option name="closed" value="true" />
+      <created>1702197097962</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197097962</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Create new class handle login process">
+      <option name="closed" value="true" />
+      <created>1702197118610</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197118611</updated>
+    </task>
+    <task id="LOCAL-00040" summary="some .idea file">
+      <option name="closed" value="true" />
+      <created>1702197139169</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197139169</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fix bug update all owners">
+      <option name="closed" value="true" />
+      <created>1702220765203</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1702220765203</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="skeleton initialization" />
-    <MESSAGE value="search feature almost completed" />
-    <MESSAGE value="add local environment variables" />
-    <MESSAGE value="delete unnecessary stuffs" />
-    <MESSAGE value="add password generator" />
-    <MESSAGE value="add adding application function" />
-    <MESSAGE value="fix bug" />
     <MESSAGE value="add error message" />
     <MESSAGE value="fix login frame bug" />
     <MESSAGE value="add copy to clipboard function" />
@@ -456,6 +503,14 @@
     <MESSAGE value="prettify code" />
     <MESSAGE value="changing workspace.xml" />
     <MESSAGE value="change gui layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="change gui layout" />
+    <MESSAGE value="Rename file and encode password" />
+    <MESSAGE value="Rename file" />
+    <MESSAGE value="Trim text" />
+    <MESSAGE value="Trim text and add encode text" />
+    <MESSAGE value="add new method trim text and add encode text" />
+    <MESSAGE value="Create new class handle login process" />
+    <MESSAGE value="some .idea file" />
+    <MESSAGE value="fix bug update all owners" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug update all owners" />
   </component>
 </project>
