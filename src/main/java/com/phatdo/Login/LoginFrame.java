@@ -47,7 +47,6 @@ public class LoginFrame extends JFrame {
         add(new JLabel()); // Empty label for spacing
         add(loginButton);
 
-
         // Add action listener for the login button
         loginButton.addActionListener(e -> performLogin());
         passwordField.addKeyListener(new KeyAdapter() {
@@ -59,7 +58,8 @@ public class LoginFrame extends JFrame {
             }
         });
     }
-    private void performLogin(){
+
+    private void performLogin() {
         String username = usernameTextField.getText();
         char[] passwordChars = passwordField.getPassword();
         String password = new String(passwordChars);
@@ -67,13 +67,11 @@ public class LoginFrame extends JFrame {
             if (ConnectDatabase.checkAuthenticate(username, password)) {
                 Authentication.setAuthenticate(true);
                 System.out.println("Authenticated");
+            } else {
+                DialogMessage.showErrorDialog("Dit me may ma doi vo coi acc tao", "User error");
             }
-            else {
-                DialogMessage.showErrorDialog("Couldn't find user or wrong password", "User error");
-            }
-        }
-        catch (SQLException e) {
-            DialogMessage.showErrorDialog("Coudln't connect to database :((", "Connection error");
+        } catch (SQLException e) {
+            DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
         }
     }
 
