@@ -31,13 +31,14 @@ public class PasswordGenerator {
     }
 
     private static int getValidLength() {
-        Scanner scanner = new Scanner(System.in);
-        int length;
-        do {
-            System.out.print("Enter password length (8-20): ");
-            length = scanner.nextInt();
-        } while (length < 8 || length > 20);
-        return length;
+        try (Scanner scanner = new Scanner(System.in)) {
+            int length;
+            do {
+                System.out.print("Enter password length (8-20): ");
+                length = scanner.nextInt();
+            } while (length < 8 || length > 20);
+            return length;
+        }
     }
 
     public static void main(String[] args) {
