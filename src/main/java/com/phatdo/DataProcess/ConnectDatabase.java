@@ -1,4 +1,5 @@
 package com.phatdo.DataProcess;
+
 import com.phatdo.ClipboardProcess.AutoCopy;
 import com.phatdo.Cryptography.CryptographyTest;
 
@@ -13,12 +14,13 @@ public class ConnectDatabase {
     private static final String PASSWORD = System.getenv("postgres_pwd");
 
     private static int user_id;
+
     public static boolean checkAuthenticate(String username, String password) throws SQLException {
         // SQL query
         String sqlQuery = "SELECT * FROM owners";
         try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
-             ResultSet resultSet = preparedStatement.executeQuery()) {
+                PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
+                ResultSet resultSet = preparedStatement.executeQuery()) {
             // Process the ResultSet
             while (resultSet.next()) {
                 int user_id_tmp = resultSet.getInt("owner_id");
@@ -41,10 +43,9 @@ public class ConnectDatabase {
         String sqlQuery = String.format("SELECT * FROM applications " +
                 "WHERE application= '%s' AND owner_id= %d ;", expected_application, user_id);
         try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
-             ResultSet resultSet = preparedStatement.executeQuery()) {
+                PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
+                ResultSet resultSet = preparedStatement.executeQuery()) {
             while (resultSet.next()) {
-                int ownerId = resultSet.getInt("owner_id");
                 String application = resultSet.getString("application");
                 String username = resultSet.getString("username");
                 String password = resultSet.getString("password");
@@ -60,22 +61,25 @@ public class ConnectDatabase {
     }
 
     public static void addApplication(String application, String username, String password) throws Exception {
-        String sqlQuery = String.format("INSERT INTO applications (owner_id, application, username, password, date_modified)" +
-                "VALUES (%d, '%s', '%s', '%s', '%s');", user_id, application, username, CryptographyTest.encrypt(password), Timestamp.from(Instant.now()));
+        String sqlQuery = String.format(
+                "INSERT INTO applications (owner_id, application, username, password, date_modified)" +
+                        "VALUES (%d, '%s', '%s', '%s', '%s');",
+                user_id, application, username, CryptographyTest.encrypt(password), Timestamp.from(Instant.now()));
         try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)) {
+                PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)) {
             preparedStatement.executeUpdate();
         }
     }
+
     public static void updateApplication(String application, String password) throws Exception {
         String sqlQuery = String.format("UPDATE applications " +
-                                        "SET password = '%s', date_modified = '%s' " +
-                                        "WHERE application = '%s';", CryptographyTest.encrypt(password), Timestamp.from(Instant.now()), application);
+                "SET password = '%s', date_modified = '%s' " +
+                "WHERE application = '%s';", CryptographyTest.encrypt(password), Timestamp.from(Instant.now()),
+                application);
         try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)) {
+                PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)) {
             preparedStatement.executeUpdate();
         }
     }
 
 }
-
