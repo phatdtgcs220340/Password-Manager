@@ -180,8 +180,8 @@ public class PasswordManagerFrame extends JFrame {
         generatePasswordButton_update.addActionListener(e -> performGeneratePassword(updatePasswordTextField));
         updateButton.addActionListener(e -> performUpdate());
         // Add tabs to the tabbedPane
-        tabbedPane.addTab("Add Application", addPanel);
         tabbedPane.addTab("Search Application", searchPanel);
+        tabbedPane.addTab("Add Application", addPanel);
         tabbedPane.addTab("Update Application", updatePanel);
         // Add tabbedPane to the frame
         add(tabbedPane);
