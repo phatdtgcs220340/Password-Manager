@@ -1,8 +1,9 @@
 package com.phatdo.Login;
 
 import com.phatdo.Authentication.Authentication;
-import com.phatdo.DataProcess.ConnectDatabase;
+import com.phatdo.DataProcess.OwnerProcess;
 import com.phatdo.PasswordManager.DialogMessage;
+import com.phatdo.StringFormatter.StringFormat;
 
 import javax.swing.*;
 import java.awt.*;
@@ -60,11 +61,11 @@ public class LoginFrame extends JFrame {
     }
 
     private void performLogin() {
-        String username = usernameTextField.getText();
+        String username = StringFormat.removeLeadingTrailingSpaces(usernameTextField.getText());
         char[] passwordChars = passwordField.getPassword();
         String password = new String(passwordChars);
         try {
-            if (ConnectDatabase.checkAuthenticate(username, password)) {
+            if (OwnerProcess.checkAuthenticate(username, password)) {
                 Authentication.setAuthenticate(true);
                 System.out.println("Authenticated");
             } else {
