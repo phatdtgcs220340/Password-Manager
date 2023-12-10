@@ -17,7 +17,7 @@ public class Main{
         JFrame loginFrame = new LoginFrame();
         loginFrame.setVisible(true);
         boolean isAuthenticated;
-        while(true) {
+        do {
             isAuthenticated = Authentication.getAuthenticate();
             try {
                 // Sleep for 0.2 seconds (200 milliseconds)
@@ -25,9 +25,7 @@ public class Main{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if (isAuthenticated)
-                break;
-        }
+        } while (!isAuthenticated);
         loginFrame.setVisible(false);
         JFrame pasManFrame = new PasswordManagerFrame();
         pasManFrame.setVisible(true);
