@@ -58,4 +58,14 @@ public class ApplicationProcess {
         }
     }
 
+    public static void deleteApplication(String application) throws SQLException {
+        String sqlQuery = String.format("DELETE FROM applications "
+                        +"WHERE application = '%s' AND owner_id = '%d';",
+                application, OwnerProcess.getUser_id());
+        try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)) {
+            preparedStatement.executeUpdate();
+        }
+    }
+
 }

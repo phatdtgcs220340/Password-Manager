@@ -26,6 +26,9 @@ public class PasswordManagerFrame extends JFrame {
     private JButton updateButton;
     private JButton generatePasswordButton_update;
 
+    private JTextField deleteApplicationTextField;
+    private JButton deleteButton;
+
     public PasswordManagerFrame() {
         setTitle("Password Manager");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -147,7 +150,7 @@ public class PasswordManagerFrame extends JFrame {
         gbc.gridy = 0;
         gbc.anchor = GridBagConstraints.WEST;
         gbc.insets = new Insets(5, 5, 5, 5);
-        updatePanel.add(new JLabel("Application"), gbc);
+        updatePanel.add(new JLabel("Application:"), gbc);
 
         gbc.gridx = 2;
         gbc.gridy = 0;
@@ -159,7 +162,7 @@ public class PasswordManagerFrame extends JFrame {
         gbc.gridy = 1;
         gbc.anchor = GridBagConstraints.WEST;
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        updatePanel.add(new JLabel("New Password  "), gbc);
+        updatePanel.add(new JLabel("New Password:"), gbc);
 
         gbc.gridx = 2;
         gbc.gridy = 1;
@@ -179,10 +182,36 @@ public class PasswordManagerFrame extends JFrame {
         generatePasswordButton_update.addActionListener(e -> performGeneratePassword(updatePasswordTextField));
         updateButton.addActionListener(e -> performUpdate());
 
+        // Delete tab
+        JPanel deletePanel = new JPanel(new GridBagLayout());
+        gbc = new GridBagConstraints();
+
+        deleteApplicationTextField = new JTextField();
+        deleteButton = new JButton("Delete");
+
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.WEST;
+        gbc.insets = new Insets(5, 5, 5, 5);
+        deletePanel.add(new JLabel("Application: "), gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.gridwidth = 2;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        deletePanel.add(deleteApplicationTextField, gbc);
+
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.gridwidth = 2;
+        deletePanel.add(deleteButton, gbc);
+
+        deleteButton.addActionListener(e -> performDelete());
         // Add tabs to the tabbedPane
-        tabbedPane.addTab("Search Application", searchPanel);
-        tabbedPane.addTab("Add Application", addPanel);
-        tabbedPane.addTab("Update Application", updatePanel);
+        tabbedPane.addTab("Search", searchPanel);
+        tabbedPane.addTab("Add", addPanel);
+        tabbedPane.addTab("Update", updatePanel);
+        tabbedPane.addTab("Delete", deletePanel);
         // Add tabbedPane to the frame
         add(tabbedPane);
 
@@ -263,6 +292,35 @@ public class PasswordManagerFrame extends JFrame {
         }
     }
 
+    public void performDelete() {
+        try {
+            String application = deleteApplicationTextField.getText();
+            application = StringFormat.toCapitalize(application);
+            String result = ApplicationProcess.findApplication(application);
+            if (application.isEmpty()) {
+                DialogMessage.showErrorDialog("Application must be specified", "Invalid input");
+                return;
+            }
+            if (Objects.equals(result, "")) {
+                DialogMessage.showErrorDialog("Application doesn't exist", "Invalid input");
+                return;
+            }
+            int decision = DialogMessage.showDecisionDialog("The application will be deleted",
+                    "Are you sure about that");
+            if (decision == 0) {
+                ApplicationProcess.deleteApplication(application);
+                DialogMessage.showNotificationDialog(
+                        String.format("%s's has been deleted", application),
+                        "Application deleted");
+            }
+            else
+                return;
+
+        }
+        catch (SQLException e) {
+            DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
+        }
+    }
     public void performGeneratePassword(JTextField textField) {
         String generated_password = PasswordGenerator.generatePassword(16);
         AutoCopy.copyToClipboard(generated_password);
