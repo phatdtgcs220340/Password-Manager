@@ -9,5 +9,9 @@ public class DialogMessage {
     public static void showNotificationDialog(String message, String title) {
         JOptionPane.showMessageDialog(null, message, title, JOptionPane.INFORMATION_MESSAGE);
     }
-
+    public static int showDecisionDialog(String message, String title) {
+        int decision = JOptionPane.showConfirmDialog(null, message,
+                title, JOptionPane.YES_NO_OPTION);
+        return decision;
+    }
 }
