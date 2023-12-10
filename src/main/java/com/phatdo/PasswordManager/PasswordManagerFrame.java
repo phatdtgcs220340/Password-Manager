@@ -1,6 +1,7 @@
 package com.phatdo.PasswordManager;
 
-import com.phatdo.DataProcess.ConnectDatabase;
+import com.phatdo.ClipboardProcess.AutoCopy;
+import com.phatdo.DataProcess.ApplicationProcess;
 import com.phatdo.Cryptography.PasswordGenerator;
 import com.phatdo.StringFormatter.StringFormat;
 import org.postgresql.util.PSQLException;
@@ -177,6 +178,7 @@ public class PasswordManagerFrame extends JFrame {
 
         generatePasswordButton_update.addActionListener(e -> performGeneratePassword(updatePasswordTextField));
         updateButton.addActionListener(e -> performUpdate());
+
         // Add tabs to the tabbedPane
         tabbedPane.addTab("Search Application", searchPanel);
         tabbedPane.addTab("Add Application", addPanel);
@@ -192,7 +194,7 @@ public class PasswordManagerFrame extends JFrame {
     public void performSearch() {
         try {
             String applicationInput = StringFormat.toCapitalize(searchApplicationTextField.getText());
-            String result = ConnectDatabase.findApplication(applicationInput);
+            String result = ApplicationProcess.findApplication(applicationInput);
             if (Objects.equals(result, "")) {
                 DialogMessage.showErrorDialog("Application doesn't exist", "Invalid input");
                 return;
@@ -207,13 +209,22 @@ public class PasswordManagerFrame extends JFrame {
         try {
             String application = addApplicationTextField.getText();
             application = StringFormat.toCapitalize(application);
-            String username = addUsernameTextField.getText();
-            String password = addPasswordTextField.getText();
+            String username = StringFormat.removeLeadingTrailingSpaces(addUsernameTextField.getText());
+            String password = StringFormat.removeLeadingTrailingSpaces(addPasswordTextField.getText());
             if (username.isEmpty() || password.isEmpty() || application.isEmpty()) {
                 DialogMessage.showErrorDialog("All necessary information must be filled", "Invalid input");
                 return;
             }
-            ConnectDatabase.addApplication(application, username, password);
+            int decision = DialogMessage.showDecisionDialog("Are you sure with the change",
+                    "Are you sure about that");
+            if (decision == 0) {
+                ApplicationProcess.updateApplication(application, password);
+                DialogMessage.showNotificationDialog(
+                        String.format("%s's password has been successfully changed", application),
+                        "Password added");
+            } else
+                return;
+            ApplicationProcess.addApplication(application, username, password);
             DialogMessage.showNotificationDialog(String.format("%s has been successfully added", application),
                     "Application added");
         } catch (PSQLException e) {
@@ -229,8 +240,9 @@ public class PasswordManagerFrame extends JFrame {
         try {
             String application = updateApplicationTextField.getText();
             application = StringFormat.toCapitalize(application);
-            String password = updatePasswordTextField.getText();
-            String result = ConnectDatabase.findApplication(application);
+            String password = StringFormat.removeLeadingTrailingSpaces(updatePasswordTextField.getText());
+            String result = ApplicationProcess.findApplication(application);
+
             if (Objects.equals(result, "")) {
                 DialogMessage.showErrorDialog("Application doesn't exist", "Invalid input");
                 return;
@@ -242,7 +254,7 @@ public class PasswordManagerFrame extends JFrame {
             int decision = DialogMessage.showDecisionDialog("Are you sure with the change",
                     "Are you sure about that");
             if (decision == 0) {
-                ConnectDatabase.updateApplication(application, password);
+                ApplicationProcess.updateApplication(application, password);
                 DialogMessage.showNotificationDialog(
                         String.format("%s's password has been successfully changed", application),
                         "Password added");
@@ -256,7 +268,9 @@ public class PasswordManagerFrame extends JFrame {
     }
 
     public void performGeneratePassword(JTextField textField) {
-        textField.setText(PasswordGenerator.generatePassword(16));
+        String generated_password = PasswordGenerator.generatePassword(16);
+        AutoCopy.copyToClipboard(generated_password);
+        textField.setText(generated_password);
     }
 
     public static void main(String[] args) {
