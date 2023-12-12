@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="fix bug update all owners">
+    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="idea stuffs">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +59,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Password-Manager [:ApplicationProcess.main()].executor": "Run",
     "Gradle.Password-Manager [:ConnectDatabase.main()].executor": "Run",
     "Gradle.Password-Manager [:DialogMessage.main()].executor": "Run",
     "Gradle.Password-Manager [:Main.main()].executor": "Run",
@@ -149,7 +154,8 @@
       <workItem from="1702141511721" duration="93000" />
       <workItem from="1702186789271" duration="4907000" />
       <workItem from="1702195138208" duration="2061000" />
-      <workItem from="1702219823153" duration="2435000" />
+      <workItem from="1702219823153" duration="2898000" />
+      <workItem from="1702390659525" duration="1703000" />
     </task>
     <task id="LOCAL-00001" summary="skeleton initialization">
       <option name="closed" value="true" />
@@ -479,15 +485,29 @@
       <option name="project" value="LOCAL" />
       <updated>1702220765203</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add delete function">
+      <option name="closed" value="true" />
+      <created>1702222565712</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702222565712</updated>
+    </task>
+    <task id="LOCAL-00043" summary="idea stuffs">
+      <option name="closed" value="true" />
+      <created>1702222581093</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702222581093</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add error message" />
-    <MESSAGE value="fix login frame bug" />
     <MESSAGE value="add copy to clipboard function" />
     <MESSAGE value="delete unused stuffs" />
     <MESSAGE value="changing comments" />
@@ -511,6 +531,8 @@
     <MESSAGE value="Create new class handle login process" />
     <MESSAGE value="some .idea file" />
     <MESSAGE value="fix bug update all owners" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug update all owners" />
+    <MESSAGE value="add delete function" />
+    <MESSAGE value="idea stuffs" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea stuffs" />
   </component>
 </project>
