@@ -4,8 +4,10 @@ import com.phatdo.ClipboardProcess.AutoCopy;
 import com.phatdo.Cryptography.Cryptography;
 import com.phatdo.StringFormatter.StringFormat;
 
+import javax.print.DocFlavor;
 import java.sql.*;
 import java.time.Instant;
+import java.util.ArrayList;
 
 public class ApplicationProcess {
     // JDBC URL, username, and password of PostgreSQL server
@@ -14,6 +16,11 @@ public class ApplicationProcess {
 
     private static final String PASSWORD = System.getenv("postgres_pwd");
 
+    public static void main(String[] args) throws SQLException {
+        for (String application : applicationList()) {
+            System.out.println(application);
+        }
+    }
     public static String findApplication(String expected_application) throws SQLException {
         String result = "";
         String sqlQuery = String.format("SELECT * FROM applications " +
@@ -68,4 +75,17 @@ public class ApplicationProcess {
         }
     }
 
+    public static ArrayList<String> applicationList() throws SQLException {
+        ArrayList<String> applications = new ArrayList<>();
+        String sqlQuery = String.format("SELECT application from applications " +
+                "WHERE owner_id = '%s';", OwnerProcess.getUser_id());
+        try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+            while (resultSet.next()) {
+                applications.add(resultSet.getString("application"));
+            }
+            return applications;
+        }
+    }
 }

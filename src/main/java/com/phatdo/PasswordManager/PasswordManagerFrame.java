@@ -17,7 +17,7 @@ public class PasswordManagerFrame extends JFrame {
     private JTextField addPasswordTextField;
     private JButton addButton;
     private JButton generatePasswordButton_add;
-    private JTextField searchApplicationTextField;
+    private JComboBox searchApplicationTextField;
     private JTextArea searchInformationTextField;
     private JButton searchButton;
 
@@ -39,8 +39,12 @@ public class PasswordManagerFrame extends JFrame {
         // Search Tab
         JPanel searchPanel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
-
-        searchApplicationTextField = new JTextField();
+        try {
+            searchApplicationTextField = new JComboBox<>(ApplicationProcess.applicationList().toArray(new String[0]));
+        }
+        catch (SQLException e) {
+            DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
+        }
         searchInformationTextField = new JTextArea(3, 20);
         searchButton = new JButton("Search");
 
@@ -222,7 +226,7 @@ public class PasswordManagerFrame extends JFrame {
 
     public void performSearch() {
         try {
-            String applicationInput = StringFormat.toCapitalize(searchApplicationTextField.getText());
+            String applicationInput = StringFormat.toCapitalize((String) searchApplicationTextField.getSelectedItem());
             String result = ApplicationProcess.findApplication(applicationInput);
             if (Objects.equals(result, "")) {
                 DialogMessage.showErrorDialog("Application doesn't exist", "Invalid input");
