@@ -23,7 +23,8 @@ public class OwnerProcess {
 
     public static boolean checkAuthenticate(String username, String password) throws SQLException {
         // SQL query
-        String sqlQuery = "SELECT * FROM owners";
+        String sqlQuery = String.format("SELECT * FROM owners " +
+                "WHERE owner_name = '%s';", username);
         try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery);
              ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -31,6 +32,7 @@ public class OwnerProcess {
             while (resultSet.next()) {
                 int user_id_tmp = resultSet.getInt("owner_id");
                 String username_tmp = resultSet.getString("owner_name");
+                System.out.println(username_tmp);
                 String password_tmp = Cryptography.decrypt(resultSet.getString("password"));
                 if (username_tmp.equals(username) && password_tmp.equals(password)) {
                     user_id = user_id_tmp;
