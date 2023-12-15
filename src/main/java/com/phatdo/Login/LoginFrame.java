@@ -27,7 +27,7 @@ public class LoginFrame extends JFrame {
         setSize(250, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        ImageIcon img = new ImageIcon("src/main/resources/img/icon/frameicon.png");
+        ImageIcon img = new ImageIcon("src/main/resources/img/frame_icon/frameicon.png");
         setIconImage(img.getImage());
         getContentPane().setBackground(Color.decode("#EEF5FF"));
 
