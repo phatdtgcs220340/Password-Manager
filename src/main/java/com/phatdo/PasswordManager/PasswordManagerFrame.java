@@ -17,7 +17,7 @@ public class PasswordManagerFrame extends JFrame {
     private JTextField addPasswordTextField;
     private JButton addButton;
     private JButton generatePasswordButton_add;
-    private JComboBox searchApplicationTextField;
+    private JComboBox<String> searchApplicationComboBox;
     private JTextArea searchInformationTextField;
     private JButton searchButton;
 
@@ -33,7 +33,7 @@ public class PasswordManagerFrame extends JFrame {
         setTitle("Password Manager");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        ImageIcon img = new ImageIcon("src/main/resources/img/icon/frameicon.png");
+        ImageIcon img = new ImageIcon("src/main/resources/img/frame_icon/frameicon.png");
         setIconImage(img.getImage());
         getContentPane().setBackground(Color.decode("#EEF5FF"));
         JTabbedPane tabbedPane = new JTabbedPane();
@@ -42,7 +42,7 @@ public class PasswordManagerFrame extends JFrame {
         JPanel searchPanel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         try {
-            searchApplicationTextField = new JComboBox<>(ApplicationProcess.applicationList().toArray(new String[0]));
+            searchApplicationComboBox = new JComboBox<>(ApplicationProcess.applicationList().toArray(new String[0]));
         }
         catch (SQLException e) {
             DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
@@ -63,7 +63,7 @@ public class PasswordManagerFrame extends JFrame {
         gbc.gridy = 0;
         gbc.gridwidth = 2;
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        searchPanel.add(searchApplicationTextField, gbc);
+        searchPanel.add(searchApplicationComboBox, gbc);
 
         gbc.gridx = 0;
         gbc.gridy = 1;
@@ -228,7 +228,7 @@ public class PasswordManagerFrame extends JFrame {
 
     public void performSearch() {
         try {
-            String applicationInput = StringFormat.toCapitalize((String) searchApplicationTextField.getSelectedItem());
+            String applicationInput = StringFormat.toCapitalize((String) searchApplicationComboBox.getSelectedItem());
             String result = ApplicationProcess.findApplication(applicationInput);
             if (Objects.equals(result, "")) {
                 DialogMessage.showErrorDialog("Application doesn't exist", "Invalid input");
