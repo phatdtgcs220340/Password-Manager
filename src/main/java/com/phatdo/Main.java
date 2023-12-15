@@ -5,6 +5,7 @@ import com.phatdo.Login.LoginFrame;
 import com.phatdo.PasswordManager.PasswordManagerFrame;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Main{
 
@@ -13,7 +14,13 @@ public class Main{
         gui.go();
     }
     public void go() {
-
+        UIManager.put("Label.foreground", Color.decode("#7C93C3"));
+        UIManager.put("TextField.foreground", Color.decode("#164863"));
+        UIManager.put("ComboBox.foreground", Color.decode("#164863"));
+        UIManager.put("ComboBox.background", Color.decode("#9EB8D9"));
+        UIManager.put("TextArea.foreground", Color.decode("#164863"));
+        UIManager.put("Button.foreground", Color.decode("#164863"));
+        UIManager.put("Button.background", Color.decode("#9EB8D9"));
         JFrame loginFrame = new LoginFrame();
         loginFrame.setVisible(true);
         boolean isAuthenticated;
@@ -29,5 +36,6 @@ public class Main{
         loginFrame.setVisible(false);
         JFrame pasManFrame = new PasswordManagerFrame();
         pasManFrame.setVisible(true);
+
     }
 }

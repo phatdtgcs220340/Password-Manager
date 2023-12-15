@@ -33,7 +33,9 @@ public class PasswordManagerFrame extends JFrame {
         setTitle("Password Manager");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-
+        ImageIcon img = new ImageIcon("src/main/resources/img/icon/frameicon.png");
+        setIconImage(img.getImage());
+        getContentPane().setBackground(Color.decode("#EEF5FF"));
         JTabbedPane tabbedPane = new JTabbedPane();
 
         // Search Tab
