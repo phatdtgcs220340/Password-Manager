@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>1229</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1267</IntrospectionStateNumber>
       <ServerVersion>15.3</ServerVersion>
-      <StartupTime>1702211009</StartupTime>
+      <StartupTime>1702387903</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -802,7 +802,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>1229</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1267</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4228,22 +4228,63 @@ false Zulu
       <StateNumber>524</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
-    <schema id="263" parent="2" name="pg_catalog">
+    <schema id="263" parent="2" name="password_manager">
+      <IntrospectionStateNumber>1267</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2023-12-12.15:00:54</LastIntrospectionLocalTimestamp>
+      <ObjectId>16841</ObjectId>
+      <StateNumber>1234</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </schema>
+    <schema id="264" parent="2" name="pg_catalog">
       <Comment>system catalog schema</Comment>
       <ObjectId>11</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
-    <schema id="264" parent="2" name="public">
+    <schema id="265" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1229</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2023-12-10.15:01:00</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>1267</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2023-12-12.15:00:54</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="265" parent="264" name="applications_application_id_seq">
+    <sequence id="266" parent="263" name="applications_application_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>16861</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>1246</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="267" parent="263" name="users_user_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>16852</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>1243</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="268" parent="263" name="accounts">
+      <ObjectId>16870</ObjectId>
+      <StateNumber>1250</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="269" parent="263" name="applications">
+      <ObjectId>16862</ObjectId>
+      <StateNumber>1250</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="270" parent="263" name="users">
+      <ObjectId>16853</ObjectId>
+      <StateNumber>1250</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <sequence id="271" parent="265" name="applications_application_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>16814</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -4251,7 +4292,7 @@ false Zulu
       <StateNumber>1107</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="266" parent="264" name="owners_owner_id_seq">
+    <sequence id="272" parent="265" name="owners_owner_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>16725</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -4259,25 +4300,201 @@ false Zulu
       <StateNumber>962</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="267" parent="264" name="applications">
+    <table id="273" parent="265" name="applications">
       <ObjectId>16815</ObjectId>
       <StateNumber>1107</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="268" parent="264" name="owners">
+    <table id="274" parent="265" name="owners">
       <ObjectId>16726</ObjectId>
       <StateNumber>1153</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="269" parent="267" name="owner_id">
+    <column id="275" parent="268" name="user_id">
+      <DasType>integer|0s</DasType>
+      <Position>1</Position>
+      <StateNumber>1250</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="276" parent="268" name="application_id">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>1250</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="277" parent="268" name="username">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>1250</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="278" parent="268" name="password">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>1250</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="279" parent="268" name="date_modified">
+      <DasType>timestamp|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>1250</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <foreign-key id="280" parent="268" name="accounts_user_id_fkey">
+      <ColNames>user_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16873</ObjectId>
+      <StateNumber>1250</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16853</RefTableId>
+    </foreign-key>
+    <foreign-key id="281" parent="268" name="accounts_application_id_fkey">
+      <ColNames>application_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16878</ObjectId>
+      <StateNumber>1250</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16862</RefTableId>
+    </foreign-key>
+    <index id="282" parent="268" name="unique_application_user_account">
+      <ColNames>user_id
+application_id
+username</ColNames>
+      <ObjectId>16883</ObjectId>
+      <StateNumber>1251</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>
+
+default</CollationNames>
+      <CollationParentNames>
+
+pg_catalog</CollationParentNames>
+      <CollationIds>
+
+100</CollationIds>
+    </index>
+    <key id="283" parent="268" name="unique_application_user_account">
+      <ObjectId>16884</ObjectId>
+      <StateNumber>1251</StateNumber>
+      <UnderlyingIndexId>16883</UnderlyingIndexId>
+    </key>
+    <column id="284" parent="269" name="application_id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;password_manager.applications_application_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1246</StateNumber>
+      <SequenceId>16861</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="285" parent="269" name="application">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1246</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="286" parent="269" name="applications_pkey">
+      <ColNames>application_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16866</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1246</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="287" parent="269" name="applications_application_key">
+      <ColNames>application</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16868</ObjectId>
+      <StateNumber>1246</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="288" parent="269" name="applications_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16867</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1246</StateNumber>
+      <UnderlyingIndexId>16866</UnderlyingIndexId>
+    </key>
+    <key id="289" parent="269" name="applications_application_key">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16869</ObjectId>
+      <StateNumber>1246</StateNumber>
+      <UnderlyingIndexId>16868</UnderlyingIndexId>
+    </key>
+    <column id="290" parent="270" name="user_id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;password_manager.users_user_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1243</StateNumber>
+      <SequenceId>16852</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="291" parent="270" name="user_name">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1243</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="292" parent="270" name="password">
+      <DasType>varchar(256)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>1243</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="293" parent="270" name="users_pkey">
+      <ColNames>user_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16857</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1243</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="294" parent="270" name="users_user_name_key">
+      <ColNames>user_name</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16859</ObjectId>
+      <StateNumber>1243</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="295" parent="270" name="users_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16858</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1243</StateNumber>
+      <UnderlyingIndexId>16857</UnderlyingIndexId>
+    </key>
+    <key id="296" parent="270" name="users_user_name_key">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16860</ObjectId>
+      <StateNumber>1243</StateNumber>
+      <UnderlyingIndexId>16859</UnderlyingIndexId>
+    </key>
+    <column id="297" parent="273" name="owner_id">
       <DasType>integer|0s</DasType>
       <Position>1</Position>
       <StateNumber>1107</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="270" parent="267" name="application_id">
+    <column id="298" parent="273" name="application_id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;applications_application_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4286,34 +4503,34 @@ false Zulu
       <SequenceId>16814</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="271" parent="267" name="application">
+    <column id="299" parent="273" name="application">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>1107</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="272" parent="267" name="username">
+    <column id="300" parent="273" name="username">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>1107</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="273" parent="267" name="password">
+    <column id="301" parent="273" name="password">
       <DasType>varchar(256)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>1107</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="274" parent="267" name="date_modified">
+    <column id="302" parent="273" name="date_modified">
       <DasType>timestamp|0s</DasType>
       <Position>6</Position>
       <StateNumber>1107</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <foreign-key id="275" parent="267" name="applications_owner_id_fkey">
+    <foreign-key id="303" parent="273" name="applications_owner_id_fkey">
       <ColNames>owner_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16821</ObjectId>
@@ -4321,7 +4538,7 @@ false Zulu
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16726</RefTableId>
     </foreign-key>
-    <index id="276" parent="267" name="unique_application_owner">
+    <index id="304" parent="273" name="unique_application_owner">
       <ColNames>owner_id
 application_id
 application</ColNames>
@@ -4339,41 +4556,12 @@ pg_catalog</CollationParentNames>
 
 100</CollationIds>
     </index>
-    <index id="277" parent="267" name="unique_application_owner_pair">
-      <ColNames>owner_id
-application_id</ColNames>
-      <ObjectId>16837</ObjectId>
-      <StateNumber>1226</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="278" parent="267" name="unique_application_id_and_owner_id_pair">
-      <ColNames>application
-owner_id</ColNames>
-      <ObjectId>16831</ObjectId>
-      <StateNumber>1175</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationNames>default</CollationNames>
-      <CollationIds>100</CollationIds>
-      <CollationParentNames>pg_catalog</CollationParentNames>
-    </index>
-    <key id="279" parent="267" name="unique_application_owner">
+    <key id="305" parent="273" name="unique_application_owner">
       <ObjectId>16834</ObjectId>
       <StateNumber>1198</StateNumber>
       <UnderlyingIndexId>16833</UnderlyingIndexId>
     </key>
-    <key id="280" parent="267" name="unique_application_owner_pair">
-      <ObjectId>16838</ObjectId>
-      <StateNumber>1226</StateNumber>
-      <UnderlyingIndexId>16837</UnderlyingIndexId>
-    </key>
-    <key id="281" parent="267" name="unique_application_id_and_owner_id_pair">
-      <ObjectId>16832</ObjectId>
-      <StateNumber>1175</StateNumber>
-      <UnderlyingIndexId>16831</UnderlyingIndexId>
-    </key>
-    <column id="282" parent="268" name="owner_id">
+    <column id="306" parent="274" name="owner_id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;owners_owner_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4382,20 +4570,20 @@ owner_id</ColNames>
       <SequenceId>16725</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="283" parent="268" name="owner_name">
+    <column id="307" parent="274" name="owner_name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>962</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="284" parent="268" name="password">
+    <column id="308" parent="274" name="password">
       <DasType>varchar(256)|0s</DasType>
       <Position>3</Position>
       <StateNumber>1153</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="285" parent="268" name="owners_pkey">
+    <index id="309" parent="274" name="owners_pkey">
       <ColNames>owner_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16730</ObjectId>
@@ -4404,7 +4592,7 @@ owner_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="286" parent="268" name="unique_owner">
+    <index id="310" parent="274" name="unique_owner">
       <ColNames>owner_name</ColNames>
       <ObjectId>16839</ObjectId>
       <StateNumber>1228</StateNumber>
@@ -4414,14 +4602,14 @@ owner_id</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="287" parent="268" name="owners_pkey">
+    <key id="311" parent="274" name="owners_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16731</ObjectId>
       <Primary>1</Primary>
       <StateNumber>962</StateNumber>
       <UnderlyingIndexId>16730</UnderlyingIndexId>
     </key>
-    <key id="288" parent="268" name="unique_owner">
+    <key id="312" parent="274" name="unique_owner">
       <ObjectId>16840</ObjectId>
       <StateNumber>1228</StateNumber>
       <UnderlyingIndexId>16839</UnderlyingIndexId>

@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="idea stuffs">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/frameicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/frameicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +64,7 @@
     "Gradle.Password-Manager [:ApplicationProcess.main()].executor": "Run",
     "Gradle.Password-Manager [:ConnectDatabase.main()].executor": "Run",
     "Gradle.Password-Manager [:DialogMessage.main()].executor": "Run",
+    "Gradle.Password-Manager [:LoginFrame.main()].executor": "Run",
     "Gradle.Password-Manager [:Main.main()].executor": "Run",
     "Gradle.Password-Manager [:PasswordManagerFrame.main()].executor": "Run",
     "Gradle.Password-Manager [:StringFormat.main()].executor": "Run",
@@ -74,13 +77,13 @@
     "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ddtph/OneDrive/Documents/Password-Manager",
+    "last_opened_file_path": "C:/Users/ddtph/OneDrive/Documents/Password-Manager/src/main/resources/img/icon",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
@@ -94,6 +97,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ddtph\OneDrive\Documents\Password-Manager\src\main\resources\img\icon" />
       <recent name="C:\Users\ddtph\OneDrive\Documents\Password-Manager\src\main\resources\data" />
     </key>
   </component>
@@ -156,6 +160,8 @@
       <workItem from="1702195138208" duration="2061000" />
       <workItem from="1702219823153" duration="2898000" />
       <workItem from="1702390659525" duration="1703000" />
+      <workItem from="1702580254733" duration="2873000" />
+      <workItem from="1702617986556" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="skeleton initialization">
       <option name="closed" value="true" />
