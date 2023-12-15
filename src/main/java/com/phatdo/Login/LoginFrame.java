@@ -5,13 +5,10 @@ import com.phatdo.DataProcess.OwnerProcess;
 import com.phatdo.PasswordManager.DialogMessage;
 import com.phatdo.StringFormatter.StringFormat;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
-import java.net.URL;
 import java.sql.SQLException;
 
 public class LoginFrame extends JFrame {
