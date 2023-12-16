@@ -43,8 +43,7 @@ public class PasswordManagerFrame extends JFrame {
         GridBagConstraints gbc = new GridBagConstraints();
         try {
             searchApplicationComboBox = new JComboBox<>(ApplicationProcess.applicationList().toArray(new String[0]));
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
         }
         searchInformationTextField = new JTextArea(3, 20);
@@ -316,17 +315,16 @@ public class PasswordManagerFrame extends JFrame {
             if (decision == 0) {
                 ApplicationProcess.deleteApplication(application);
                 DialogMessage.showNotificationDialog(
-                        String.format("%s's has been deleted", application),
+                        String.format("%s has been deleted", application),
                         "Application deleted");
-            }
-            else
+            } else
                 return;
 
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             DialogMessage.showErrorDialog("Couldn't connect to database :((", "Connection error");
         }
     }
+
     public void performGeneratePassword(JTextField textField) {
         String generated_password = PasswordGenerator.generatePassword(16);
         AutoCopy.copyToClipboard(generated_password);

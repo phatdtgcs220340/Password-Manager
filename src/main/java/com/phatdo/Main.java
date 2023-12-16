@@ -7,12 +7,13 @@ import com.phatdo.PasswordManager.PasswordManagerFrame;
 import javax.swing.*;
 import java.awt.*;
 
-public class Main{
+public class Main {
 
     public static void main(String[] args) {
         Main gui = new Main();
         gui.go();
     }
+
     public void go() {
         UIManager.put("Label.foreground", Color.decode("#7C93C3"));
         UIManager.put("TextField.foreground", Color.decode("#164863"));
