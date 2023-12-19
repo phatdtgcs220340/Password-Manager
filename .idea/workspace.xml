@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="rename combobox variable">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2023_13_50_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2023_13_50__Changes_.xml" beforeDir="false" />
+    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="outside stuffs">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/RegisterFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Cryptography/PasswordGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Cryptography/PasswordGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/frame_icon/frameicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/frame_icon/frameicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/frame_icon/frameicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/frame_icon/frameicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,39 +295,8 @@
       <workItem from="1702754167205" duration="1434000" />
       <workItem from="1702756363911" duration="281000" />
       <workItem from="1702794573152" duration="248000" />
-      <workItem from="1702985429871" duration="700000" />
-    </task>
-    <task id="LOCAL-00001" summary="skeleton initialization">
-      <option name="closed" value="true" />
-      <created>1701969624133</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1701969624134</updated>
-    </task>
-    <task id="LOCAL-00002" summary="search feature almost completed">
-      <option name="closed" value="true" />
-      <created>1701972397916</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1701972397916</updated>
-    </task>
-    <task id="LOCAL-00003" summary="delete unnecessary stuffs">
-      <option name="closed" value="true" />
-      <created>1701999506043</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1701999506043</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add local environment variables">
-      <option name="closed" value="true" />
-      <created>1702012555075</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1702012555075</updated>
+      <workItem from="1702985429871" duration="2743000" />
+      <workItem from="1703000590127" duration="1530000" />
     </task>
     <task id="LOCAL-00005" summary="delete unnecessary stuffs">
       <option name="closed" value="true" />
@@ -694,7 +658,39 @@
       <option name="project" value="LOCAL" />
       <updated>1702622609368</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="prettify code">
+      <option name="closed" value="true" />
+      <created>1702986202603</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1702986202604</updated>
+    </task>
+    <task id="LOCAL-00051" summary="remove main">
+      <option name="closed" value="true" />
+      <created>1702986216967</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1702986216967</updated>
+    </task>
+    <task id="LOCAL-00052" summary="add refresh combobox">
+      <option name="closed" value="true" />
+      <created>1702986252103</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1702986252103</updated>
+    </task>
+    <task id="LOCAL-00053" summary="outside stuffs">
+      <option name="closed" value="true" />
+      <created>1702986483546</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1702986483546</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,13 +708,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="project updating" />
-    <MESSAGE value="refactor AutoCopy" />
-    <MESSAGE value="Delete LoadJSON" />
     <MESSAGE value="add workspace.xml" />
     <MESSAGE value="add confirm dialog" />
     <MESSAGE value="add updating application function" />
-    <MESSAGE value="prettify code" />
     <MESSAGE value="changing workspace.xml" />
     <MESSAGE value="change gui layout" />
     <MESSAGE value="Rename file and encode password" />
@@ -737,6 +729,10 @@
     <MESSAGE value="add dialog icon" />
     <MESSAGE value="icon stuffs..." />
     <MESSAGE value="rename combobox variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename combobox variable" />
+    <MESSAGE value="prettify code" />
+    <MESSAGE value="remove main" />
+    <MESSAGE value="add refresh combobox" />
+    <MESSAGE value="outside stuffs" />
+    <option name="LAST_COMMIT_MESSAGE" value="outside stuffs" />
   </component>
 </project>

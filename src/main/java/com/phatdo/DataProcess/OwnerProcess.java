@@ -13,14 +13,18 @@ public class OwnerProcess {
 
     private static int user_id;
 
-    public static void setUser_id(int user_id) {
-        OwnerProcess.user_id = user_id;
-    }
-
     public static int getUser_id() {
         return OwnerProcess.user_id;
     }
 
+    public static void createNewOwner(String username, String password) throws SQLException {
+        String sqlQuery = String.format("INSERT INTO owners(owner_name, password)" +
+                "VALUES ('%s','%s');", username, password);
+        try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)) {
+            preparedStatement.executeUpdate();
+        }
+    }
     public static boolean checkAuthenticate(String username, String password) throws SQLException {
         // SQL query
         String sqlQuery = String.format("SELECT * FROM owners " +
