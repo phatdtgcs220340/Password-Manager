@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="idea stuffs">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/frameicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/frameicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="rename combobox variable">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2023_13_50_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_12_2023_13_50__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Cryptography/PasswordGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Cryptography/PasswordGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/ApplicationProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/frame_icon/frameicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/frame_icon/frameicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/frame_icon/frameicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/frame_icon/frameicon.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,42 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Password-Manager" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Password-Manager" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Password-Manager" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Password-Manager" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -42,6 +76,20 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;phatdtgcs220340&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5d407cfd-015f-4950-9d3d-7d82c3fa3213" />
+        <option name="url" value="https://github.com/phatdtgcs220340/Password-Manager.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -58,50 +106,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.Password-Manager [:ApplicationProcess.main()].executor": "Run",
-    "Gradle.Password-Manager [:ConnectDatabase.main()].executor": "Run",
-    "Gradle.Password-Manager [:DialogMessage.main()].executor": "Run",
-    "Gradle.Password-Manager [:LoginFrame.main()].executor": "Run",
-    "Gradle.Password-Manager [:Main.main()].executor": "Run",
-    "Gradle.Password-Manager [:PasswordManagerFrame.main()].executor": "Run",
-    "Gradle.Password-Manager [:StringFormat.main()].executor": "Run",
-    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
-    "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ddtph/OneDrive/Documents/Password-Manager/src/main/resources/img/icon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Profiler#1&quot;,
+    &quot;Gradle.Build Password-Manager.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [:ApplicationProcess.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [:ConnectDatabase.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [:DialogMessage.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [:LoginFrame.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [:PasswordManagerFrame.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [:StringFormat.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [:build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [compileJava].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Password-Manager [jar].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ddtph/OneDrive/Documents/Password-Manager/src/main/resources/img/icon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ddtph\OneDrive\Documents\Password-Manager\src\main\resources\img\icon" />
       <recent name="C:\Users\ddtph\OneDrive\Documents\Password-Manager\src\main\resources\data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle compileJava" />
+      <command value="gradle jar" />
+      <command value="gradle :build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.phatdo.Main" />
       <module name="Password-Manager.main" />
@@ -115,6 +175,79 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Password-Manager [:build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Password-Manager [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Password-Manager [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Password-Manager [:build]" />
+        <item itemvalue="Gradle.Password-Manager [compileJava]" />
+        <item itemvalue="Gradle.Password-Manager [jar]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -161,7 +294,13 @@
       <workItem from="1702219823153" duration="2898000" />
       <workItem from="1702390659525" duration="1703000" />
       <workItem from="1702580254733" duration="2873000" />
-      <workItem from="1702617986556" duration="2296000" />
+      <workItem from="1702617986556" duration="4355000" />
+      <workItem from="1702622826828" duration="1637000" />
+      <workItem from="1702708972794" duration="5473000" />
+      <workItem from="1702754167205" duration="1434000" />
+      <workItem from="1702756363911" duration="281000" />
+      <workItem from="1702794573152" duration="248000" />
+      <workItem from="1702985429871" duration="700000" />
     </task>
     <task id="LOCAL-00001" summary="skeleton initialization">
       <option name="closed" value="true" />
@@ -507,19 +646,72 @@
       <option name="project" value="LOCAL" />
       <updated>1702222581093</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="add icon file">
+      <option name="closed" value="true" />
+      <created>1702620621723</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1702620621723</updated>
+    </task>
+    <task id="LOCAL-00045" summary="add color">
+      <option name="closed" value="true" />
+      <created>1702620650964</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1702620650964</updated>
+    </task>
+    <task id="LOCAL-00046" summary=".idea stuffs">
+      <option name="closed" value="true" />
+      <created>1702620668190</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1702620668190</updated>
+    </task>
+    <task id="LOCAL-00047" summary="add dialog icon">
+      <option name="closed" value="true" />
+      <created>1702622565183</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1702622565183</updated>
+    </task>
+    <task id="LOCAL-00048" summary="icon stuffs...">
+      <option name="closed" value="true" />
+      <created>1702622596281</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1702622596281</updated>
+    </task>
+    <task id="LOCAL-00049" summary="rename combobox variable">
+      <option name="closed" value="true" />
+      <created>1702622609367</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1702622609368</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add copy to clipboard function" />
-    <MESSAGE value="delete unused stuffs" />
-    <MESSAGE value="changing comments" />
-    <MESSAGE value="add toCapitalize() method" />
-    <MESSAGE value="modify it for general using of dialog message" />
-    <MESSAGE value="fix empty text bug" />
     <MESSAGE value="project updating" />
     <MESSAGE value="refactor AutoCopy" />
     <MESSAGE value="Delete LoadJSON" />
@@ -539,6 +731,12 @@
     <MESSAGE value="fix bug update all owners" />
     <MESSAGE value="add delete function" />
     <MESSAGE value="idea stuffs" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea stuffs" />
+    <MESSAGE value="add icon file" />
+    <MESSAGE value="add color" />
+    <MESSAGE value=".idea stuffs" />
+    <MESSAGE value="add dialog icon" />
+    <MESSAGE value="icon stuffs..." />
+    <MESSAGE value="rename combobox variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename combobox variable" />
   </component>
 </project>
