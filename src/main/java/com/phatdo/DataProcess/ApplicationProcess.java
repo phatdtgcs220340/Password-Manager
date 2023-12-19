@@ -12,7 +12,6 @@ public class ApplicationProcess {
     // JDBC URL, username, and password of PostgreSQL server
     private static final String JDBC_URL = "jdbc:postgresql://localhost:5432/postgres";
     private static final String USERNAME = System.getenv("postgres_user");
-
     private static final String PASSWORD = System.getenv("postgres_pwd");
 
     public static void main(String[] args) throws SQLException {
