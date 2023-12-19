@@ -9,6 +9,7 @@ import org.postgresql.util.PSQLException;
 import javax.swing.*;
 import java.awt.*;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class PasswordManagerFrame extends JFrame {
@@ -255,6 +256,7 @@ public class PasswordManagerFrame extends JFrame {
                 ApplicationProcess.addApplication(application, username, password);
                 DialogMessage.showNotificationDialog(String.format("%s has been successfully added", application),
                         "Application added");
+                refreshCombobox();
             } else
                 return;
         } catch (PSQLException e) {
@@ -317,6 +319,7 @@ public class PasswordManagerFrame extends JFrame {
                 DialogMessage.showNotificationDialog(
                         String.format("%s has been deleted", application),
                         "Application deleted");
+                refreshCombobox();
             } else
                 return;
 
@@ -330,7 +333,17 @@ public class PasswordManagerFrame extends JFrame {
         AutoCopy.copyToClipboard(generated_password);
         textField.setText(generated_password);
     }
+    public void refreshCombobox() throws SQLException{
+        // Here you should fetch your data again
+        ArrayList<String> applications = ApplicationProcess.applicationList();
 
+        // Then you need to convert your list into an array
+        String[] applicationArray = applications.toArray(new String[0]);
+
+        // Then you create a new DefaultComboBoxModel with the array and set it to the combobox
+        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(applicationArray);
+        searchApplicationComboBox.setModel(model);
+    }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new PasswordManagerFrame());
     }
