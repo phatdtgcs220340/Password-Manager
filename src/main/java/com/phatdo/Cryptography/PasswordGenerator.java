@@ -40,10 +40,4 @@ public class PasswordGenerator {
             return length;
         }
     }
-
-    public static void main(String[] args) {
-        int length = getValidLength();
-        String password = generatePassword(length);
-        System.out.println("Generated Password: " + password);
-    }
 }
