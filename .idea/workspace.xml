@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="idea stuffs">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/frameicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/icon/frameicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/PasswordManager/PasswordManagerFrame.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="aebc7330-7e66-4e26-9651-aa5d1fc2474e" value="Violet" />
+    </colors>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Z5IFg05uiHoR48IR3MdgDsXBWh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Password-Manager [:ApplicationProcess.main()].executor": "Run",
+    "Gradle.Password-Manager [:ConnectDatabase.main()].executor": "Run",
+    "Gradle.Password-Manager [:DialogMessage.main()].executor": "Run",
+    "Gradle.Password-Manager [:LoginFrame.main()].executor": "Run",
+    "Gradle.Password-Manager [:Main.main()].executor": "Run",
+    "Gradle.Password-Manager [:PasswordManagerFrame.main()].executor": "Run",
+    "Gradle.Password-Manager [:StringFormat.main()].executor": "Run",
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ddtph/OneDrive/Documents/Password-Manager/src/main/resources/img/icon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ddtph\OneDrive\Documents\Password-Manager\src\main\resources\img\icon" />
+      <recent name="C:\Users\ddtph\OneDrive\Documents\Password-Manager\src\main\resources\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.phatdo.Main" />
+      <module name="Password-Manager.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phatdo.StringFormatter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-corretto-20.0.2.1-3183f394aec4-907a2361" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="" />
+      <created>1701705414349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701705414349</updated>
+      <workItem from="1701705415518" duration="3018000" />
+      <workItem from="1701746340793" duration="1102000" />
+      <workItem from="1701842236884" duration="922000" />
+      <workItem from="1701873118433" duration="3471000" />
+      <workItem from="1701888338459" duration="2655000" />
+      <workItem from="1701914804074" duration="3429000" />
+      <workItem from="1701933104738" duration="597000" />
+      <workItem from="1701936454083" duration="4821000" />
+      <workItem from="1701949365111" duration="2389000" />
+      <workItem from="1701951796425" duration="5869000" />
+      <workItem from="1701968963003" duration="3434000" />
+      <workItem from="1701997882385" duration="5257000" />
+      <workItem from="1702012254759" duration="167000" />
+      <workItem from="1702012443124" duration="1741000" />
+      <workItem from="1702029632380" duration="593000" />
+      <workItem from="1702030603828" duration="2650000" />
+      <workItem from="1702048581811" duration="4660000" />
+      <workItem from="1702062837233" duration="3776000" />
+      <workItem from="1702094833645" duration="843000" />
+      <workItem from="1702095845470" duration="89000" />
+      <workItem from="1702104470397" duration="5113000" />
+      <workItem from="1702111360822" duration="2459000" />
+      <workItem from="1702117346302" duration="1926000" />
+      <workItem from="1702135978495" duration="2758000" />
+      <workItem from="1702141511721" duration="93000" />
+      <workItem from="1702186789271" duration="4907000" />
+      <workItem from="1702195138208" duration="2061000" />
+      <workItem from="1702219823153" duration="2898000" />
+      <workItem from="1702390659525" duration="1703000" />
+      <workItem from="1702580254733" duration="2873000" />
+      <workItem from="1702617986556" duration="2296000" />
+    </task>
+    <task id="LOCAL-00001" summary="skeleton initialization">
+      <option name="closed" value="true" />
+      <created>1701969624133</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701969624134</updated>
+    </task>
+    <task id="LOCAL-00002" summary="search feature almost completed">
+      <option name="closed" value="true" />
+      <created>1701972397916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701972397916</updated>
+    </task>
+    <task id="LOCAL-00003" summary="delete unnecessary stuffs">
+      <option name="closed" value="true" />
+      <created>1701999506043</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701999506043</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add local environment variables">
+      <option name="closed" value="true" />
+      <created>1702012555075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702012555075</updated>
+    </task>
+    <task id="LOCAL-00005" summary="delete unnecessary stuffs">
+      <option name="closed" value="true" />
+      <created>1702013446271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702013446271</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add password generator">
+      <option name="closed" value="true" />
+      <created>1702065704405</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702065704405</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add adding application function">
+      <option name="closed" value="true" />
+      <created>1702065733408</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702065733408</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1702065746324</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702065746324</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add error message">
+      <option name="closed" value="true" />
+      <created>1702065765578</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702065765578</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix login frame bug">
+      <option name="closed" value="true" />
+      <created>1702065790159</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702065790159</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add copy to clipboard function">
+      <option name="closed" value="true" />
+      <created>1702106652130</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702106652130</updated>
+    </task>
+    <task id="LOCAL-00012" summary="delete unused stuffs">
+      <option name="closed" value="true" />
+      <created>1702106710350</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702106710350</updated>
+    </task>
+    <task id="LOCAL-00013" summary="delete unused stuffs">
+      <option name="closed" value="true" />
+      <created>1702106834266</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702106834266</updated>
+    </task>
+    <task id="LOCAL-00014" summary="delete unused stuffs">
+      <option name="closed" value="true" />
+      <created>1702106863225</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702106863225</updated>
+    </task>
+    <task id="LOCAL-00015" summary="delete unused stuffs">
+      <option name="closed" value="true" />
+      <created>1702106872357</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702106872357</updated>
+    </task>
+    <task id="LOCAL-00016" summary="changing comments">
+      <option name="closed" value="true" />
+      <created>1702106908189</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702106908190</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add toCapitalize() method">
+      <option name="closed" value="true" />
+      <created>1702106934823</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702106934823</updated>
+    </task>
+    <task id="LOCAL-00018" summary="modify it for general using of dialog message">
+      <option name="closed" value="true" />
+      <created>1702110035180</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110035180</updated>
+    </task>
+    <task id="LOCAL-00019" summary="modify it for general using of dialog message">
+      <option name="closed" value="true" />
+      <created>1702110055094</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110055094</updated>
+    </task>
+    <task id="LOCAL-00020" summary="modify it for general using of dialog message">
+      <option name="closed" value="true" />
+      <created>1702110059769</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110059770</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix empty text bug">
+      <option name="closed" value="true" />
+      <created>1702110081338</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110081338</updated>
+    </task>
+    <task id="LOCAL-00022" summary="project updating">
+      <option name="closed" value="true" />
+      <created>1702110109522</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702110109522</updated>
+    </task>
+    <task id="LOCAL-00023" summary="refactor AutoCopy">
+      <option name="closed" value="true" />
+      <created>1702111548533</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702111548533</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor AutoCopy">
+      <option name="closed" value="true" />
+      <created>1702111555923</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1702111555923</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Delete LoadJSON">
+      <option name="closed" value="true" />
+      <created>1702111569588</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1702111569588</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add workspace.xml">
+      <option name="closed" value="true" />
+      <created>1702115361101</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1702115361101</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add confirm dialog">
+      <option name="closed" value="true" />
+      <created>1702190941160</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1702190941161</updated>
+    </task>
+    <task id="LOCAL-00028" summary="prettify code">
+      <option name="closed" value="true" />
+      <created>1702190955004</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1702190955004</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add updating application function">
+      <option name="closed" value="true" />
+      <created>1702190971445</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702190971445</updated>
+    </task>
+    <task id="LOCAL-00030" summary="add updating application function">
+      <option name="closed" value="true" />
+      <created>1702190976773</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1702190976773</updated>
+    </task>
+    <task id="LOCAL-00031" summary="prettify code">
+      <option name="closed" value="true" />
+      <created>1702190997292</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1702190997292</updated>
+    </task>
+    <task id="LOCAL-00032" summary="changing workspace.xml">
+      <option name="closed" value="true" />
+      <created>1702191016190</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1702191016190</updated>
+    </task>
+    <task id="LOCAL-00033" summary="change gui layout">
+      <option name="closed" value="true" />
+      <created>1702191113327</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1702191113327</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Rename file and encode password">
+      <option name="closed" value="true" />
+      <created>1702197041382</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197041383</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Rename file">
+      <option name="closed" value="true" />
+      <created>1702197048459</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197048459</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Trim text">
+      <option name="closed" value="true" />
+      <created>1702197067532</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197067532</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Trim text and add encode text">
+      <option name="closed" value="true" />
+      <created>1702197084215</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197084215</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add new method trim text and add encode text">
+      <option name="closed" value="true" />
+      <created>1702197097962</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197097962</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Create new class handle login process">
+      <option name="closed" value="true" />
+      <created>1702197118610</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197118611</updated>
+    </task>
+    <task id="LOCAL-00040" summary="some .idea file">
+      <option name="closed" value="true" />
+      <created>1702197139169</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702197139169</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fix bug update all owners">
+      <option name="closed" value="true" />
+      <created>1702220765203</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1702220765203</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add delete function">
+      <option name="closed" value="true" />
+      <created>1702222565712</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702222565712</updated>
+    </task>
+    <task id="LOCAL-00043" summary="idea stuffs">
+      <option name="closed" value="true" />
+      <created>1702222581093</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702222581093</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add copy to clipboard function" />
+    <MESSAGE value="delete unused stuffs" />
+    <MESSAGE value="changing comments" />
+    <MESSAGE value="add toCapitalize() method" />
+    <MESSAGE value="modify it for general using of dialog message" />
+    <MESSAGE value="fix empty text bug" />
+    <MESSAGE value="project updating" />
+    <MESSAGE value="refactor AutoCopy" />
+    <MESSAGE value="Delete LoadJSON" />
+    <MESSAGE value="add workspace.xml" />
+    <MESSAGE value="add confirm dialog" />
+    <MESSAGE value="add updating application function" />
+    <MESSAGE value="prettify code" />
+    <MESSAGE value="changing workspace.xml" />
+    <MESSAGE value="change gui layout" />
+    <MESSAGE value="Rename file and encode password" />
+    <MESSAGE value="Rename file" />
+    <MESSAGE value="Trim text" />
+    <MESSAGE value="Trim text and add encode text" />
+    <MESSAGE value="add new method trim text and add encode text" />
+    <MESSAGE value="Create new class handle login process" />
+    <MESSAGE value="some .idea file" />
+    <MESSAGE value="fix bug update all owners" />
+    <MESSAGE value="add delete function" />
+    <MESSAGE value="idea stuffs" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea stuffs" />
+  </component>
+</project>
