@@ -1,5 +1,7 @@
 package com.phatdo.FrameFormatter;
 
+import java.awt.Color;
+
 import javax.swing.UIManager;
 
 import com.phatdo.ColorFormatter.ColorEnum;
@@ -21,12 +23,17 @@ public class FrameFormat {
         UIManager.put("OptionPane.messageForeground", ColorEnum.OPTION_PANE.getFgColor());
         UIManager.put("OptionPane.background", ColorEnum.OPTION_PANE.getBgColor());
         UIManager.put("Panel.background", ColorEnum.BACKGROUND.getBgColor());
+        UIManager.put("TabbedPane.background", ColorEnum.BUTTON.getBgColor()); // Background color
+        UIManager.put("TabbedPane.foreground", ColorEnum.BUTTON.getFgColor()); // Text color
+        UIManager.put("TabbedPane.selected", Color.decode("#FFE5E5")); // Selected tab color
         UIManager.put("OptionPane.messageFont", FontFormat.loadFontFromURL(FontFormat.REGULAR_FONT_URL));
         UIManager.put("TextField.font", FontFormat.loadFontFromURL(FontFormat.REGULAR_FONT_URL));
         UIManager.put("PasswordField.font", FontFormat.loadFontFromURL(FontFormat.REGULAR_FONT_URL));
         UIManager.put("ComboBox.font", FontFormat.loadFontFromURL(FontFormat.REGULAR_FONT_URL));
         UIManager.put("Button.font", FontFormat.loadFontFromURL(FontFormat.BOLD_FONT_URL));
         UIManager.put("TextArea.font", FontFormat.loadFontFromURL(FontFormat.REGULAR_FONT_URL));
-        UIManager.put("Label.font", FontFormat.loadFontFromURL(FontFormat.BOLD_FONT_URL));
+        UIManager.put("Label.font", FontFormat.loadFontFromURL(FontFormat.SEMI_BOLD_FONT_URL));
+        UIManager.put("TabbedPane.font", FontFormat.loadFontFromURL(FontFormat.SEMI_BOLD_FONT_URL));
+
     }
 }
