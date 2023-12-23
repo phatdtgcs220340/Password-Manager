@@ -1,6 +1,7 @@
 package com.phatdo.Login;
 
 import com.phatdo.Authentication.Authentication;
+import com.phatdo.ColorFormatter.ColorEnum;
 import com.phatdo.DataProcess.OwnerProcess;
 import com.phatdo.PasswordManager.DialogMessage;
 import com.phatdo.StringFormatter.StringFormat;
@@ -25,8 +26,6 @@ public class LoginFrame extends JFrame {
         setLocationRelativeTo(null);
         ImageIcon img = new ImageIcon("src/main/resources/img/frame_icon/frameicon.png");
         setIconImage(img.getImage());
-        getContentPane().setBackground(Color.decode("#EEF5FF"));
-
         // Create components
         usernameTextField = new JTextField();
         passwordField = new JPasswordField();
