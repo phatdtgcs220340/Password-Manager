@@ -2,6 +2,7 @@ package com.phatdo.PasswordManager;
 
 import com.phatdo.ClipboardProcess.AutoCopy;
 import com.phatdo.DataProcess.ApplicationProcess;
+import com.phatdo.DataProcess.OwnerProcess;
 import com.phatdo.Cryptography.PasswordGenerator;
 import com.phatdo.StringFormatter.StringFormat;
 import org.postgresql.util.PSQLException;
@@ -31,7 +32,7 @@ public class PasswordManagerFrame extends JFrame {
     private JButton deleteButton;
 
     public PasswordManagerFrame() {
-        setTitle("Password Manager");
+        setTitle(String.format("Password Manager - %s", OwnerProcess.getUsername()));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         ImageIcon img = new ImageIcon("src/main/resources/img/frame_icon/frameicon.png");
@@ -250,7 +251,7 @@ public class PasswordManagerFrame extends JFrame {
                 DialogMessage.showErrorDialog("All necessary information must be filled", "Invalid input");
                 return;
             }
-            int decision = DialogMessage.showDecisionDialog("Are you sure with the change",
+            int decision = DialogMessage.showDecisionDialog("You gonna add this application",
                     "Are you sure about that");
             if (decision == 0) {
                 ApplicationProcess.addApplication(application, username, password);
@@ -333,17 +334,20 @@ public class PasswordManagerFrame extends JFrame {
         AutoCopy.copyToClipboard(generated_password);
         textField.setText(generated_password);
     }
-    public void refreshCombobox() throws SQLException{
+
+    public void refreshCombobox() throws SQLException {
         // Here you should fetch your data again
         ArrayList<String> applications = ApplicationProcess.applicationList();
 
         // Then you need to convert your list into an array
         String[] applicationArray = applications.toArray(new String[0]);
 
-        // Then you create a new DefaultComboBoxModel with the array and set it to the combobox
+        // Then you create a new DefaultComboBoxModel with the array and set it to the
+        // combobox
         DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(applicationArray);
         searchApplicationComboBox.setModel(model);
     }
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new PasswordManagerFrame());
     }
