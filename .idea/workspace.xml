@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="outside stuffs">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/RegisterFrame.java" afterDir="false" />
+    <list default="true" id="10e8f64b-8f31-49a7-a833-a0d929890987" name="Changes" comment="add register">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aebc7330-7e66-4e26-9651-aa5d1fc2474e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/DataProcess/OwnerProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phatdo/Login/LoginFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +124,7 @@
     &quot;database.data.extractors.current.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ddtph/OneDrive/Documents/Password-Manager/src/main/resources/img/icon&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ddtph&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -236,13 +235,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.Password-Manager [:build]" />
-        <item itemvalue="Gradle.Password-Manager [compileJava]" />
-        <item itemvalue="Gradle.Password-Manager [jar]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -296,15 +288,8 @@
       <workItem from="1702756363911" duration="281000" />
       <workItem from="1702794573152" duration="248000" />
       <workItem from="1702985429871" duration="2743000" />
-      <workItem from="1703000590127" duration="1530000" />
-    </task>
-    <task id="LOCAL-00005" summary="delete unnecessary stuffs">
-      <option name="closed" value="true" />
-      <created>1702013446271</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1702013446271</updated>
+      <workItem from="1703000590127" duration="2028000" />
+      <workItem from="1703234440642" duration="34000" />
     </task>
     <task id="LOCAL-00006" summary="add password generator">
       <option name="closed" value="true" />
@@ -690,7 +675,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702986483546</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="add register">
+      <option name="closed" value="true" />
+      <created>1703002386721</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1703002386722</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,7 +701,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add workspace.xml" />
     <MESSAGE value="add confirm dialog" />
     <MESSAGE value="add updating application function" />
     <MESSAGE value="changing workspace.xml" />
@@ -733,6 +725,7 @@
     <MESSAGE value="remove main" />
     <MESSAGE value="add refresh combobox" />
     <MESSAGE value="outside stuffs" />
-    <option name="LAST_COMMIT_MESSAGE" value="outside stuffs" />
+    <MESSAGE value="add register" />
+    <option name="LAST_COMMIT_MESSAGE" value="add register" />
   </component>
 </project>
