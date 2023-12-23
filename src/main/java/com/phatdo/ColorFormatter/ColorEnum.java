@@ -9,7 +9,7 @@ public enum ColorEnum {
     TITLEBAR("#0B0B0D", "#FFFFFF"),
     OPTION_PANE("#474A56", "#D3D5FD"),
     COMBO_BOX("#474A56", "#FFFFFF"),
-    BUTTON("#474A56", "#929AAB");
+    BUTTON("#756AB6", "#E0AED0");
 
     private Color fgColor;
     private Color bgColor;
