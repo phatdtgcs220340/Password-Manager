@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class FontFormat {
     public static final String REGULAR_FONT_URL = "src\\main\\resources\\font\\OpenSans-Regular.ttf";
+    public static final String SEMI_BOLD_FONT_URL = "src\\main\\resources\\font\\OpenSans-SemiBold.ttf";
     public static final String BOLD_FONT_URL = "src\\main\\resources\\font\\OpenSans-Bold.ttf";
 
     public static Font loadFontFromURL(String font_url) {
