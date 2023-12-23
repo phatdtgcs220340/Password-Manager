@@ -1,7 +1,6 @@
 package com.phatdo.Login;
 
 import com.phatdo.Authentication.Authentication;
-import com.phatdo.ColorFormatter.ColorEnum;
 import com.phatdo.DataProcess.OwnerProcess;
 import com.phatdo.PasswordManager.DialogMessage;
 import com.phatdo.StringFormatter.StringFormat;
