@@ -1,6 +1,6 @@
 # Password Manager Project
 ## Building a second brain
-Create a password manager that has a powerful password generator and trustworthy storage.
+Create a password manager that has a powerful password management system and trustworthy storage.
 <be>
 ![image](https://github.com/phatdtgcs220340/Password-Manager/assets/114555261/70297c71-c4ba-4dfb-b021-dc4a10b72985)
 
