@@ -3,14 +3,13 @@
 
 Create a password manager that has a powerful password generator and trustworthy storage.
 <br>
-![image](https://github.com/phatdtgcs220340/Password-Manager/assets/114555261/d183be9b-df62-4714-9f0a-0a32681b92a8)
-
 ## Installation
+![image](https://github.com/phatdtgcs220340/Password-Manager/assets/114555261/0674afbb-4311-4263-b112-4f4bfea83c2b)
 
 ### 1. Install Java 20
 
 Make sure you have Java 20 installed on your system. You can download it from the official Oracle website or use an open-source distribution like OpenJDK. Ensure that Java is added to your system's PATH variable.
-
+![image](https://github.com/phatdtgcs220340/Password-Manager/assets/114555261/3b101c67-aea2-4bd0-ab75-483dfed8f2e2)
 ### 2. Install PostgreSQL
 
 The Password Manager Project requires a PostgreSQL database for storing encrypted passwords securely. Follow these steps to install PostgreSQL:
@@ -32,6 +31,8 @@ The Password Manager Project requires a PostgreSQL database for storing encrypte
     brew install postgresql
     ```
 
+
+![image](https://github.com/phatdtgcs220340/Password-Manager/assets/114555261/72216fc6-d8d8-40b0-af32-7bedac6c9e5c)
 ### 3. Install Gradle Build Tool
 
 The project uses Gradle as the build tool. Follow these steps to install Gradle:
