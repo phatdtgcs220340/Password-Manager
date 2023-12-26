@@ -2,7 +2,7 @@
 ## Building a second brain
 Create a password manager that has a powerful password management system and trustworthy storage.
 <be>
-![image](https://github.com/phatdtgcs220340/Password-Manager/assets/114555261/70297c71-c4ba-4dfb-b021-dc4a10b72985)
+![image](https://github.com/phatdtgcs220340/Password-Manager/assets/114555261/49f42a0c-7abc-4ff4-8369-41b50c59c276)
 
 ## Installation
 
